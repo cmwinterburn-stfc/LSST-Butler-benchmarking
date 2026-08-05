@@ -1,0 +1,12 @@
+services:
+  hammerdb:
+    image: tpcorg/hammerdb
+    container_name: hammerdb
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./scripts:/scripts
+      - ./results:/results
+    
+    env_file:
+      - ./configs/butler_dev.env
