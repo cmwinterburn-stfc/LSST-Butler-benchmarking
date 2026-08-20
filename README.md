@@ -29,9 +29,9 @@ make up
 ## Usage
 
 There are three execution modes given per benchmark:
-    - Build creates a dedicated schema for benchmarking and loads the data. The schema must exist before a run or scale.
-    - Run executes a single run with a fixed number of virtual users, default = 1.
-    - Scale executes sequential runs, doubling concurrent virtual users with each pass. This is designed to identify performance bottlenecks. 
+- Build creates a dedicated schema for benchmarking and loads the data. The schema must exist before a run or scale.
+- Run executes a single run with a fixed number of virtual users, default = 1.
+- Scale executes sequential runs, doubling concurrent virtual users with each pass. This is designed to identify performance bottlenecks. 
 
 ```bash
 # TPC-C
