@@ -5,9 +5,10 @@ Benchmarking harness for PostgreSQL using HammerDB, running TPC-C and TPC-H work
 Benchmarks are designed to generate a standardised saturating workload on a database. TPC-C simulates OLTP, and TPC-H simulates OLAP. 
 
 Concepts:
-     - VU is a virtual user, simulating a single applciation session.
-     - TPC-C simulates a retail schema. Number of warehouses is analagous to the scale of the schema.
-     - TPC-H scale factor determines the size of the schema. It is configurable, with default set to SF30 ~ 62GB total size.
+
+- VU is a virtual user, simulating a single applciation session.
+- TPC-C simulates a retail schema. Number of warehouses is analagous to the scale of the schema.
+- TPC-H scale factor determines the size of the schema. It is configurable, with default set to SF30 ~ 62GB total size.
 
 Detailed information on the benchmarking spec is available at https://www.hammerdb.com/docs3.3/
 
