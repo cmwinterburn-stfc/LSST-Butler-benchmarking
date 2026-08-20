@@ -9,8 +9,8 @@ diset tpch pg_tpch_pass $::env(PG_PASS)
 diset tpch pg_tpch_dbase $::env(PG_TPCH_DBASE)
 diset tpch pg_scale_fact $::env(SCALE_FACT)
 
-diset tpch pg_degree_of_parallel 2
-diset tpch pg_verbose true
+diset tpch pg_degree_of_parallel $::env(DOP)
+diset tpch pg_verbose $::env(VERBOSE)
 
 print dict
 

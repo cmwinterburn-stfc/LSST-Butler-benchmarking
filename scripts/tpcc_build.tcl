@@ -11,7 +11,7 @@ diset tpcc pg_pass $::env(PG_PASS)
 diset tpcc pg_dbase $::env(PG_TPCC_DBASE)
 
 diset tpcc pg_count_ware $::env(WAREHOUSES)
-diset tpcc pg_num_vu 4
+diset tpcc pg_num_vu $::env(BUILD_VUS)
 
 print dict
 

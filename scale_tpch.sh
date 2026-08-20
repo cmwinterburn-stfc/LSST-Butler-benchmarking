@@ -7,10 +7,13 @@ timestamp=$(date +%Y%m%d-%H%M%S)
 
 for vus in 1 2 4
 do
-    echo "Running ${vus} VUs"
+    echo "Running ${vus} VUs | SCALE_FACT=${SCALE_FACT} DOP=${DOP}"
 
     docker exec \
         -e VUS="$vus" \
+        -e SCALE_FACT="$SCALE_FACT" \
+        -e DOP="$DOP" \
+        -e VERBOSE="$VERBOSE" \
         hammerdb \
         /home/HammerDB-5.0/hammerdbcli auto /scripts/tpch_run.tcl \
         2>&1 | tee "results/tpch-${vus}vu-${timestamp}.log"

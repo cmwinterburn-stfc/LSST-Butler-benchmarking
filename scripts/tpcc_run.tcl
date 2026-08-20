@@ -10,9 +10,9 @@ diset tpcc pg_dbase $::env(PG_TPCC_DBASE)
 diset tpcc pg_count_ware $::env(WAREHOUSES)
 
 diset tpcc pg_driver timed
-diset tpcc pg_rampup 5
-diset tpcc pg_duration 15
-diset tpcc pg_timeprofile true
+diset tpcc pg_rampup $::env(RAMPUP)
+diset tpcc pg_duration $::env(DURATION)
+diset tpcc pg_timeprofile $::env(TIMEPROFILE)
 
 print dict
 

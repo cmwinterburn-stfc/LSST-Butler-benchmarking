@@ -11,7 +11,7 @@ diset tpch pg_tpch_pass $::env(PG_PASS)
 diset tpch pg_tpch_dbase $::env(PG_TPCH_DBASE)
 
 diset tpch pg_scale_fact $::env(SCALE_FACT)
-diset tpch pg_num_tpch_threads 4
+diset tpch pg_num_tpch_threads $::env(THREADS)
 
 print dict
 

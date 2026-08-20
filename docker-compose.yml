@@ -4,9 +4,11 @@ services:
     container_name: hammerdb
     tty: true
     stdin_open: true
+    # Use host networking alongside ssh tunnel to the database server for a persistent connection.
+    network_mode: host
     volumes:
       - ./scripts:/scripts
       - ./results:/results
     
     env_file:
-      - ./configs/butler_dev.env
+      - ./configs/butler_prod_ssh.env
