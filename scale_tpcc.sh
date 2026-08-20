@@ -5,7 +5,7 @@
 
 timestamp=$(date +%Y%m%d-%H%M%S)
 
-for vus in 1 2 4 8 16 32 64 128
+for vus in 1 2 4 8 16 32 64
 do
     echo "Running ${vus} VUs | WAREHOUSES=${WAREHOUSES} rampup=${RAMPUP} duration=${DURATION}"
 

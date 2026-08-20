@@ -8,14 +8,14 @@ BUILD_VUS ?= 4
 RAMPUP ?= 5
 DURATION ?= 15
 TIMEPROFILE ?= true
-TPCC_VUS ?= 8
+TPCC_VUS ?= 1
 
 #TPCH Defaults
 #Build
 SCALE_FACT ?= 30
 THREADS ?= 6
 #Run
-TPCH_VUS ?= 4
+TPCH_VUS ?= 1
 DOP ?= 4
 VERBOSE ?= false
 
